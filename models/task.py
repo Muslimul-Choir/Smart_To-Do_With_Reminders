@@ -49,7 +49,7 @@ class Task(BaseTask):
     """Class turunan: menambahkan kategori, tenggat, prioritas, dan status."""
 
     def __init__(self, task_id, title, description, subject, deadline,
-                 priority, status="Pending", created=None):
+                priority, status="Pending", created=None):
         super().__init__(task_id, title, description)
         self._subject = subject
         self._deadline = deadline

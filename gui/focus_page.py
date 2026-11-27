@@ -26,7 +26,7 @@ def build_focus_page(parent, app):
     app.focus_done_icon.create_line(9, 15, 13, 19, 21, 10, fill=WHITE, width=2)
 
     app.focus_title_label = tk.Label(body, font=(FONT, 22, "bold"), bg=WHITE, fg=NAVY,
-                                     wraplength=600, justify="left")
+                                    wraplength=600, justify="left")
     app.focus_title_label.pack(anchor="w", pady=(4, 8))
 
     app.focus_info_label = tk.Label(body, font=(FONT, 11), bg=WHITE, fg=TEXT, justify="left")
@@ -39,9 +39,9 @@ def build_focus_page(parent, app):
     app.focus_time_left_label.pack(anchor="w", pady=(8, 16))
 
     app.focus_button = ttk.Button(body, text="Tandai selesai", style="Success.TButton",
-                                  command=app.complete_focus_task)
+                                command=app.complete_focus_task)
     app.focus_button.pack(anchor="w")
 
     tk.Label(page, text="Urutan: belum selesai, tenggat terdekat, lalu prioritas tertinggi.",
-             font=(FONT, 9), bg=BG, fg=MUTED).grid(row=2, column=0, sticky="w", pady=(10, 0))
+            font=(FONT, 9), bg=BG, fg=MUTED).grid(row=2, column=0, sticky="w", pady=(10, 0))
     return page
